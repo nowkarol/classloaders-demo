@@ -52,12 +52,10 @@ public class AllResources {
 
     static void printStream(InputStream inputStream) {
         System.out.print("Line " + ++printCounter + " ");
-        String result = null;
         if (inputStream != null) {
-            result = new BufferedReader(new InputStreamReader(inputStream))
+            new BufferedReader(new InputStreamReader(inputStream))
                     .lines()
-                    .collect(Collectors.joining());
+                    .forEach(System.out::println);
         }
-        System.out.println(result);
     }
 }
