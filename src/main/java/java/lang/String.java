@@ -9,6 +9,6 @@ public class String {
 
     @Override
     public String toString() {
-        return "this is CustomString described using normal String";
+        return "this is CustomString described using CustomString";
     }
 }
